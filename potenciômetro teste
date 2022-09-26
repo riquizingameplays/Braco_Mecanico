@@ -1,0 +1,15 @@
+#define pot1 A2
+
+#define bot1 2
+void setup() {
+    Serial.begin(9600);
+}
+
+ 
+int var1,b1;
+void loop() {
+  var1 = analogRead(pot1);
+  b1 = digitalRead(bot1);
+  Serial.println(var1);    
+  delay(100);
+}
